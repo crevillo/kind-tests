@@ -8,12 +8,12 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: packages/consul/9.0.3
-    repoURL: 'https://github.com/SplashThat/kubernetes-charts.git'
+    repoURL: 'https://github.com/crevillo/kind-tests.git'
     targetRevision: HEAD
     helm:
       version: v3
       valueFiles:
-        - ../../../values/development/eu-central-1/consul.yaml
+        - ../values/consul.yaml
   project: default
   syncPolicy:
     automated:
