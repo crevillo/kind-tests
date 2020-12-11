@@ -1,0 +1,9 @@
+consul:
+  replicaCount: 5
+  ingress:
+    enabled: true
+    hostname: consul.splashdevelop.eu
+    annotations:
+      kubernetes.io/ingress: nginx
+      nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"

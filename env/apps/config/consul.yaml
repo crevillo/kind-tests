@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: consul
+spec:
+  destination:
+    namespace: consul
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: packages/consul/9.0.3
+    repoURL: 'https://github.com/SplashThat/kubernetes-charts.git'
+    targetRevision: HEAD
+    helm:
+      version: v3
+      valueFiles:
+        - ../../../values/development/eu-central-1/consul.yaml
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
