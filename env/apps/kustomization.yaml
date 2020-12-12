@@ -1,2 +1,3 @@
 resources:
 - config/consul.yaml
+- config/nginx.yaml
