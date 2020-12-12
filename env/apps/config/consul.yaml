@@ -13,7 +13,7 @@ spec:
     helm:
       version: v3
       valueFiles:
-        - ../../values/consul.yaml
+        - ../../../../values/consul.yaml
   project: default
   syncPolicy:
     automated:
