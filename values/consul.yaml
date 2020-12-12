@@ -1,5 +1,5 @@
 consul:
-  replicaCount: 5
+  replicaCount: 3
   ingress:
     enabled: true
     hostname: consul.splashdevelop.eu
