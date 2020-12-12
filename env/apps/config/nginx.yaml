@@ -13,7 +13,7 @@ spec:
     helm:
       version: v3
       valueFiles:
-        - ../../../values/ingress-nginx.yaml
+        - ../../../values/nginx.yaml
   project: default
   syncPolicy:
     automated:
