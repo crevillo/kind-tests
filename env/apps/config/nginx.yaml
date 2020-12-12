@@ -8,7 +8,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: packages/ingress-nginx/3.12.0
-    repoURL: 'https://github.com/SplashThat/kubernetes-charts.git'
+    repoURL: 'https://github.com/crevillo/kind-tests.git'
     targetRevision: HEAD
     helm:
       version: v3
